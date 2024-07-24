@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshmi Kalangi Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4d6; /* Light skin tone background color */
+        }
+
+        header {
+            background-color: #333; /* Dark header color */
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            margin-left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin-top: 60px; /* Adjust margin to avoid content hiding behind fixed header */
+            background-color: transparent; /* No background color for sections */
+            box-shadow: none; /* Remove box shadow */
+            margin: 20px 0;
+        }
+
+        section#home {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: transparent; /* No background color for home section */
+        }
+
+        section#home h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        section#home .name-highlight {
+            background-color: #0000FF;
+            color: #fff;
+            padding: 0 5px;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .additional-profile-img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%; /* Makes the image circular */
+            width: 150px; /* Adjust size as needed */
+            height: 150px; /* Keep width and height the same for a perfect circle */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+        }
+
+        section#projects h2, section#contact h2, section#about h2, section#skills h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+            max-width: 45%;
+        }
+
+        #contact .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .contact-info .info-box {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .contact-info .info-box img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .contact-info .info-box h3 {
+            margin: 10px 0;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            background-color: #fff;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333; /* Dark footer color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">RESHMI KALANGI</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <img src="r.jpg" alt="Profile Picture" class="additional-profile-img">
+        <h1>Hello, <br> This is <span>Reshmi Kalangi</span></h1>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>Hello! I’m RESHMI KALANGI, a passionate engineer with a strong background in software development. I hold a degree in Computer Engineering and have experience in various technologies including Java, Angular, and web development.</p>
+        <p>I specialize in designing and building scalable applications, with a keen interest in creating efficient solutions to complex problems. My goal is to leverage my skills to contribute to innovative projects and drive technological advancement.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project">
+                <h3>Book Donate Web App</h3>
+                <p>Books are sources of information from a very early time. Still, they are considered as a medium to spread education to the people. From our childhood, we have started learning with the help of books.</p>
+            </div>
+            <div class="project">
+                <h3>Pulse Monitoring</h3>
+                <p>The Pulse Rate Monitoring system is developed using IoT technology with an objective of detecting the heartbeat of the patient in order to monitor the risk of heart attack and also for regular checkup. Body health monitoring is very important to us to make sure our health is in excellent condition. One of the vital parameters for this device under consideration is the Pulse Rate.</p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Java</h3>
+                <p>Experienced in developing robust applications using Java and related technologies.</p>
+            </div>
+            <div class="skill">
+                <h3>Angular</h3>
+                <p>Proficient in creating dynamic single-page applications using Angular framework.</p>
+            </div>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>Skilled in HTML, CSS, and JavaScript to build responsive and user-friendly web pages.</p>
+            </div>
+            <div class="skill">
+                <h3>Database Management</h3>
+                <p>Knowledgeable in SQL and JDBC for efficient database operations and management.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Info</h2>
+        <div class="contact-info">
+            <div class="info-box">
+                
+                <h3>Phone</h3>
+                <p>+91 789 321 1234<br>+91 987 123 1234</p>
+            </div>
+            <div class="info-box">
+                
+                <h3>Email</h3>
+                <p>reshmi@gmail.com<br>kalangi@gmail.com</p>
+            </div>
+            <div class="info-box">
+                
+                <h3>Address</h3>
+                <p>Palm Avenue, Kolkata,<br>West Bengal</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Reshmi Kalangi. All rights reserved.
+    </footer>
+</body>
+</html>
